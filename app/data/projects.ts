@@ -34,7 +34,7 @@ export const projects = [
         icon: Layers,
     },
     {
-        name: "ipwise",
+        name: "IPWise",
         description: "IP Lookup & Network Utility",
         route: "/product/ipwise",
         bg: "bg-teal-700",
