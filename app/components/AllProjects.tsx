@@ -2,6 +2,7 @@
 import { useSelector } from "react-redux";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { projects } from "@/app/data/projects";
 
 const AllProjects = () => {
@@ -35,11 +36,21 @@ const AllProjects = () => {
               } rounded-xl p-3 sm:p-6 mb-2.5 sm:mb-3 flex items-center justify-between w-full cursor-pointer`}
           >
             <div className="flex items-center">
-              <div
-                className={`${project.bg} w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0`}
-              >
-                <Icon className="w-4 h-4 sm:w-6 sm:h-6" />
-              </div>
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={`${project.name} project preview`}
+                  width={96}
+                  height={54}
+                  className="w-16 h-10 sm:w-24 sm:h-14 rounded-lg object-cover mr-2.5 sm:mr-4 shrink-0"
+                />
+              ) : (
+                <div
+                  className={`${project.bg} w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white mr-2.5 sm:mr-4 shrink-0`}
+                >
+                  <Icon className="w-4 h-4 sm:w-6 sm:h-6" />
+                </div>
+              )}
 
               <div>
                 <div className="font-bold text-sm sm:text-lg">

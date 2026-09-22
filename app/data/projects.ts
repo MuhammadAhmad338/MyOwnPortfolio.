@@ -193,6 +193,7 @@ export const projects = [
         route: "/product/kestrelvpn",
         bg: "bg-teal-700",
         icon: Cloud,
+        image: "/Kestrel VPN.png",
     },
     {
         name: "Rocky VPN",
@@ -214,6 +215,7 @@ export const projects = [
         route: "/product/pranksounds",
         bg: "bg-pink-600",
         icon: Volume2,
+        image: "/prankapp.png",
     },
     {
         name: "Pixel Count",
