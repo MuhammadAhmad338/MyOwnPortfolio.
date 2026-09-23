@@ -10,12 +10,12 @@ const ProjectComponent: FC<{
     title: string;
     year: string;
     description: string,
-    imagemain: string,
+    imagemain?: string,
     articledata: {
         desc: string,
         title?: string,
-        imgsrc: string,
-        imgsrc1: string,
+        imgsrc?: string,
+        imgsrc1?: string,
         solution?: string,
     }[]
 }> = ({ title, year, description, imagemain, articledata }) => {
@@ -59,14 +59,16 @@ const ProjectComponent: FC<{
                     </div>
                 </div>
             </div>
-            <Image
-                src={imagemain}
-                alt={`${title} main image`}
-                className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
-                width={800}
-                height={500}
-                priority
-            />
+            {imagemain && (
+                <Image
+                    src={imagemain}
+                    alt={`${title} main image`}
+                    className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
+                    width={800}
+                    height={500}
+                    priority
+                />
+            )}
 
             <div className='flex items-center justify-between p-2 sm:p-4'>
                 <h1 className='font-bold text-xl sm:text-3xl'>{title}</h1>
@@ -75,25 +77,29 @@ const ProjectComponent: FC<{
             {
                 articledata.map((item, index) => (
                     <div key={index} className='p-2 sm:p-4'>
-                        <Image
-                            src={item.imgsrc}
-                            alt={`${title} image ${index + 1}`}
-                            className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
-                            width={800}
-                            height={500}
-                            priority
-                        />
-                        <p className='text-xs sm:text-base'>{item.desc}</p>
-                        <div className='flex flex-col items-start justify-between mt-3 sm:mt-4'>
-                            <h1 className='font-bold text-lg sm:text-2xl'>My Solution</h1>
+                        {item.imgsrc && (
                             <Image
-                                src={item.imgsrc1}
-                                alt={`${title} solution image ${index + 1}`}
+                                src={item.imgsrc}
+                                alt={`${title} image ${index + 1}`}
                                 className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
                                 width={800}
                                 height={500}
                                 priority
                             />
+                        )}
+                        <p className='text-xs sm:text-base'>{item.desc}</p>
+                        <div className='flex flex-col items-start justify-between mt-3 sm:mt-4'>
+                            <h1 className='font-bold text-lg sm:text-2xl'>My Solution</h1>
+                            {item.imgsrc1 && (
+                                <Image
+                                    src={item.imgsrc1}
+                                    alt={`${title} solution image ${index + 1}`}
+                                    className="object-cover h-full w-full mt-3 sm:mt-4 mb-3 sm:mb-4 rounded-lg"
+                                    width={800}
+                                    height={500}
+                                    priority
+                                />
+                            )}
                             <p className='text-xs sm:text-base'>{item.solution}</p>
                         </div>
                     </div>

@@ -1,7 +1,6 @@
 "use client"
 import octa from '../../../public/octa.png';
 import { useParams } from "next/navigation";
-import prank from "../../../public/prankapp.png";
 import gotovpn from '../../../public/gotovpn.png';
 import safenet from "../../../public/safenet.png";
 import soravpn from '../../../public/soravpn.png';
@@ -14,7 +13,6 @@ import tytanvpn from "../../../public/tytanvpn.png";
 import rockyvpn from '../../../public/rockyvpn.png';
 import freeroam from '../../../public/freeroam.png';
 import resumely from '../../../public/resumely.png';
-import newvpn from '../../../public/Kestrel VPN.png';
 import easyguard from '../../../public/easyguard.png';
 import gshieldvpn from '../../../public/gshieldvpn.png';
 import kryptonyme from '../../../public/kryptonyme.png';
@@ -313,13 +311,10 @@ const ProjectClient = () => {
       title: "Prank Sounds App",
       year: "2024",
       description: "A fun and entertaining app filled with high-quality prank sounds.",
-      imagemain: prank,
       articledata: [
         {
-          "imgsrc": prank,
           "desc": "Prank Sounds App is designed to add laughter and surprise with a variety of hilarious sound effects.",
           "title": "Prank Sounds App",
-          "imgsrc1": prank,
           "solution": "We developed a playful and engaging app with an intuitive interface, categorized sound effects, and high-quality audio to ensure the best prank experience for users."
         }
       ]
@@ -467,13 +462,10 @@ const ProjectClient = () => {
       title: "Kestrel VPN",
       year: "2025",
       description: "A robust and secure VPN application.",
-      imagemain: newvpn,
       articledata: [
         {
-          imgsrc: newvpn,
           desc: "Kestrel VPN is designed to provide users with a secure and private internet connection. It offers a range of features to ensure online safety and anonymity.",
           title: "Kestrel VPN",
-          imgsrc1: newvpn,
           solution: "We developed a high-performance VPN application with strong encryption protocols and a user-friendly interface. The app is available on multiple platforms and provides a seamless and secure browsing experience."
         }
       ]
