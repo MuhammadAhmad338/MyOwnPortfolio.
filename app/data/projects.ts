@@ -41,6 +41,13 @@ export const projects = [
         icon: Network,
     },
     {
+        name: "Azure Cost & Optimization Dashboard",
+        description: "Azure Spending & Budget Insights",
+        route: "/product/azurecostdashboard",
+        bg: "bg-blue-700",
+        icon: Cloud,
+    },
+    {
         name: "Daycount",
         description: "Everyday Calculator Suite",
         route: "/product/daycount",

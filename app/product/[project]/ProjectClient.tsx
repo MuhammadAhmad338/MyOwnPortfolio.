@@ -30,6 +30,7 @@ import ProjectComponent from "@/app/components/projectComponent";
 import daycount from '../../../public/daycount.png';
 import loomflow from '../../../public/loomflow.png';
 import ipwise from '../../../public/ipwise.png';
+import azureCostDashboard from '../../../public/azure-cost-dashboard.svg';
 
 const ProjectClient = () => {
   const params = useParams();
@@ -69,6 +70,24 @@ const ProjectClient = () => {
           imgsrc1: ipwise,
           solution:
             "We designed a minimalist, privacy-first interface that eliminates unnecessary clutter, presenting critical connection details, live network status, and easy data export."
+        },
+      ],
+    },
+
+    azurecostdashboard: {
+      title: "Azure Cost & Optimization Dashboard",
+      year: "2026",
+      imagemain: azureCostDashboard,
+      description:
+        "A centralized Azure cost management dashboard that helps teams monitor cloud spend, track resource usage, manage budgets, and identify optimization opportunities across the environment.",
+      articledata: [
+        {
+          imgsrc: azureCostDashboard,
+          desc: "Cloud cost management becomes difficult as Azure environments grow. Teams need a single place to review spending trends, spot anomalies, understand budget health, and act on underutilized resources before they affect operations.",
+          title: "Azure Cost & Optimization Dashboard",
+          imgsrc1: azureCostDashboard,
+          solution:
+            "The dashboard brings together spending summaries, subscription and resource visibility, budget tracking, and optimization recommendations in a single operational control center. It gives stakeholders a clear view of where costs are rising, which workloads are driving spend, and which actions can reduce waste without slowing delivery."
         },
       ],
     },

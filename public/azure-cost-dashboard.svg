@@ -1,0 +1,215 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020B1A"/>
+      <stop offset="0.45" stop-color="#071A33"/>
+      <stop offset="1" stop-color="#051225"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#081a2d"/>
+      <stop offset="1" stop-color="#040d1a"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#3CC9FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#3CC9FF" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7AD9FF"/>
+      <stop offset="0.5" stop-color="#43B4FF"/>
+      <stop offset="1" stop-color="#2096FF"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="panelShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#010814" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <g opacity="0.8">
+    <circle cx="88" cy="116" r="2.5" fill="#EAF7FF"/>
+    <circle cx="315" cy="160" r="2.3" fill="#EAF7FF"/>
+    <circle cx="520" cy="90" r="2.5" fill="#EAF7FF"/>
+    <circle cx="690" cy="210" r="2.9" fill="#EAF7FF"/>
+    <circle cx="900" cy="120" r="2.8" fill="#EAF7FF"/>
+    <circle cx="1055" cy="190" r="2.4" fill="#EAF7FF"/>
+    <circle cx="1160" cy="116" r="2.2" fill="#EAF7FF"/>
+    <circle cx="201" cy="300" r="2.6" fill="#EAF7FF"/>
+    <circle cx="382" cy="320" r="2.2" fill="#EAF7FF"/>
+    <circle cx="954" cy="280" r="2.4" fill="#EAF7FF"/>
+    <circle cx="1086" cy="410" r="2.7" fill="#EAF7FF"/>
+    <circle cx="1024" cy="700" r="2.5" fill="#EAF7FF"/>
+    <circle cx="527" cy="742" r="2.2" fill="#EAF7FF"/>
+    <circle cx="168" cy="760" r="2.5" fill="#EAF7FF"/>
+    <circle cx="296" cy="660" r="2.3" fill="#EAF7FF"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M130 210C160 146 215 134 255 170C287 199 322 199 356 171C388 144 421 142 447 162C472 183 510 183 540 162C570 141 604 145 630 171C660 201 688 201 711 174C731 150 760 146 781 170C815 205 860 212 897 176C936 137 988 133 1026 170C1058 201 1095 209 1130 178V286H130V210Z" fill="#78D6FF" fill-opacity="0.08"/>
+    <path d="M116 205C142 145 191 137 228 165C265 193 299 195 334 170C369 145 399 143 422 160C454 182 490 182 520 164C556 143 592 134 620 160C651 188 689 193 718 166C748 138 785 138 817 168C850 200 892 208 925 184C960 159 989 152 1018 174C1057 202 1090 203 1138 170V248H116V205Z" fill="#A7E9FF" fill-opacity="0.08"/>
+  </g>
+
+  <g filter="url(#softGlow)">
+    <path d="M120 410C155 373 194 374 226 414C252 447 277 450 306 420C332 393 362 394 384 420C408 448 438 449 463 420C488 391 515 392 543 420C570 448 603 450 630 423C657 396 687 396 714 421C738 445 768 444 796 420C824 396 856 394 884 420C913 448 946 450 973 421C1003 390 1035 390 1065 420C1093 449 1127 448 1156 420V518H120V410Z" fill="url(#chartFill)"/>
+    <path d="M120 418C155 384 182 386 212 414C245 445 280 445 298 425C320 400 360 396 391 424C420 452 446 450 474 421C498 395 531 398 558 425C588 453 611 456 635 430C658 405 688 403 713 424C744 449 770 449 794 423C821 395 854 396 881 423C908 451 938 451 966 422C995 394 1018 395 1044 423C1071 450 1099 451 1122 430V518H120V418Z" stroke="#7FD4FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#panelShadow)">
+    <rect x="135" y="132" width="930" height="620" rx="28" fill="url(#panel)" stroke="rgba(128,196,255,0.35)"/>
+  </g>
+
+  <rect x="136" y="132" width="930" height="32" rx="16" fill="#040B12" opacity="0.9"/>
+  <circle cx="170" cy="148" r="5" fill="#5C6C7E"/>
+  <circle cx="191" cy="148" r="5" fill="#8192A3"/>
+  <circle cx="212" cy="148" r="5" fill="#B5C2CF"/>
+
+  <g>
+    <path d="M300 156H550" stroke="#2C4A6B" stroke-width="2" stroke-linecap="round"/>
+    <text x="310" y="170" fill="#D8E9FF" font-size="20" font-weight="600" font-family="Arial, sans-serif">Azure Cost &amp; Optimization</text>
+  </g>
+
+  <g>
+    <rect x="140" y="176" width="170" height="460" rx="18" fill="#071525" fill-opacity="0.92"/>
+    <g>
+      <rect x="172" y="220" width="106" height="34" rx="10" fill="#0C2038"/>
+      <circle cx="188" cy="237" r="7" fill="#5DC1FF"/>
+      <text x="206" y="242" fill="#DCEBFF" font-size="12" font-family="Arial, sans-serif">Overview</text>
+    </g>
+
+    <g opacity="0.8">
+      <rect x="172" y="270" width="110" height="26" rx="8" fill="transparent"/>
+      <circle cx="188" cy="283" r="5" fill="#9DB4C9"/>
+      <text x="204" y="288" fill="#9DB4C9" font-size="11" font-family="Arial, sans-serif">Forecasting</text>
+    </g>
+    <g opacity="0.8">
+      <rect x="172" y="308" width="110" height="26" rx="8" fill="transparent"/>
+      <circle cx="188" cy="321" r="5" fill="#9DB4C9"/>
+      <text x="204" y="326" fill="#9DB4C9" font-size="11" font-family="Arial, sans-serif">Pricing</text>
+    </g>
+    <g opacity="0.8">
+      <rect x="172" y="346" width="110" height="26" rx="8" fill="transparent"/>
+      <circle cx="188" cy="359" r="5" fill="#9DB4C9"/>
+      <text x="204" y="364" fill="#9DB4C9" font-size="11" font-family="Arial, sans-serif">Cost</text>
+    </g>
+    <g opacity="0.8">
+      <rect x="172" y="384" width="110" height="26" rx="8" fill="transparent"/>
+      <circle cx="188" cy="397" r="5" fill="#9DB4C9"/>
+      <text x="204" y="402" fill="#9DB4C9" font-size="11" font-family="Arial, sans-serif">Budget</text>
+    </g>
+    <g opacity="0.8">
+      <rect x="172" y="422" width="110" height="26" rx="8" fill="transparent"/>
+      <circle cx="188" cy="435" r="5" fill="#9DB4C9"/>
+      <text x="204" y="440" fill="#9DB4C9" font-size="11" font-family="Arial, sans-serif">Reports</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="320" y="190" width="650" height="360" rx="18" fill="#061625" fill-opacity="0.82" stroke="rgba(110,186,255,0.18)"/>
+    <g>
+      <text x="340" y="227" fill="#DCEEFF" font-size="18" font-weight="700" font-family="Arial, sans-serif">Azure Cost &amp; Optimization</text>
+      <g>
+        <text x="340" y="249" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Overview</text>
+        <text x="415" y="249" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Forecasting</text>
+        <text x="500" y="249" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Budgets</text>
+        <text x="575" y="249" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Optimization</text>
+        <text x="667" y="249" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Cost</text>
+      </g>
+      <text x="340" y="286" fill="#EAF6FF" font-size="18" font-weight="700" font-family="Arial, sans-serif">$13,991</text>
+      <text x="340" y="305" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Total Cost</text>
+    </g>
+
+    <g opacity="0.25">
+      <line x1="343" y1="332" x2="935" y2="332" stroke="#B7D7F5"/>
+      <line x1="343" y1="382" x2="935" y2="382" stroke="#B7D7F5"/>
+      <line x1="343" y1="432" x2="935" y2="432" stroke="#B7D7F5"/>
+      <line x1="343" y1="482" x2="935" y2="482" stroke="#B7D7F5"/>
+      <line x1="343" y1="532" x2="935" y2="532" stroke="#B7D7F5"/>
+    </g>
+
+    <g>
+      <path d="M343 467L382 457L416 492L455 456L495 438L533 480L573 425L615 479L653 410L691 441L727 430L764 397L799 463L839 380L876 448L912 423L937 462V532H343V467Z" fill="url(#chartFill)"/>
+      <path d="M343 467L382 457L416 492L455 456L495 438L533 480L573 425L615 479L653 410L691 441L727 430L764 397L799 463L839 380L876 448L912 423L937 462" stroke="#8AD9FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="455" cy="456" r="6" fill="#F3F9FF" stroke="#58BFFF" stroke-width="3"/>
+      <circle cx="573" cy="425" r="6" fill="#F3F9FF" stroke="#58BFFF" stroke-width="3"/>
+      <circle cx="839" cy="380" r="6" fill="#F3F9FF" stroke="#58BFFF" stroke-width="3"/>
+    </g>
+
+    <g>
+      <text x="350" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Jan</text>
+      <text x="410" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Feb</text>
+      <text x="470" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Mar</text>
+      <text x="530" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Apr</text>
+      <text x="590" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">May</text>
+      <text x="650" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Jun</text>
+      <text x="710" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Jul</text>
+      <text x="770" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Aug</text>
+      <text x="830" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Sep</text>
+      <text x="890" y="574" fill="#7B8EA4" font-size="10" font-family="Arial, sans-serif">Oct</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="825" y="202" width="190" height="218" rx="18" fill="#071A2E" fill-opacity="0.95" stroke="rgba(149,197,255,0.18)"/>
+    <path d="M856 297C878 282 902 281 922 287C941 293 957 306 972 318" stroke="#8AD9FF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M860 330L927 298L982 337" stroke="#8AD9FF" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <circle cx="860" cy="330" r="5" fill="#8AD9FF"/>
+    <circle cx="927" cy="298" r="5" fill="#8AD9FF"/>
+    <circle cx="982" cy="337" r="5" fill="#8AD9FF"/>
+    <text x="844" y="257" fill="#D9EEFF" font-size="16" font-weight="700" font-family="Arial, sans-serif">Azure Advisor</text>
+    <text x="844" y="278" fill="#89A4BF" font-size="10" font-family="Arial, sans-serif">Optimization recommendations</text>
+  </g>
+
+  <g>
+    <rect x="816" y="435" width="200" height="122" rx="18" fill="#071A2E" fill-opacity="0.90"/>
+    <circle cx="839" cy="463" r="13" fill="#D2F0FF"/>
+    <text x="860" y="468" fill="#D9EEFF" font-size="15" font-weight="700" font-family="Arial, sans-serif">Azure Advisor</text>
+    <text x="839" y="490" fill="#7AA4C6" font-size="11" font-family="Arial, sans-serif">Right-size underutilized VMs</text>
+    <text x="839" y="509" fill="#7AA4C6" font-size="11" font-family="Arial, sans-serif">Move to reserved instances</text>
+    <text x="839" y="528" fill="#7AA4C6" font-size="11" font-family="Arial, sans-serif">Reduce storage spend</text>
+  </g>
+
+  <g>
+    <rect x="320" y="570" width="206" height="116" rx="16" fill="#081b2b"/>
+    <text x="344" y="608" fill="#D8EBFF" font-size="14" font-weight="700" font-family="Arial, sans-serif">Resource History</text>
+    <text x="344" y="648" fill="#F3F9FF" font-size="28" font-weight="700" font-family="Arial, sans-serif">$7.5K</text>
+    <text x="344" y="667" fill="#7A93B0" font-size="10" font-family="Arial, sans-serif">Monthly spend</text>
+  </g>
+
+  <g>
+    <rect x="548" y="570" width="210" height="116" rx="16" fill="#081b2b"/>
+    <text x="570" y="606" fill="#D8EBFF" font-size="14" font-weight="700" font-family="Arial, sans-serif">Budget</text>
+    <circle cx="635" cy="645" r="28" stroke="#7ED8FF" stroke-width="8" fill="transparent" stroke-dasharray="120 68" transform="rotate(-90 635 645)"/>
+    <text x="615" y="651" fill="#EAF7FF" font-size="18" font-weight="700" font-family="Arial, sans-serif">81%</text>
+    <text x="678" y="643" fill="#8BAAC5" font-size="12" font-family="Arial, sans-serif">$90.8k</text>
+    <text x="678" y="662" fill="#8BAAC5" font-size="10" font-family="Arial, sans-serif">remaining</text>
+  </g>
+
+  <g>
+    <rect x="780" y="570" width="212" height="116" rx="16" fill="#081b2b"/>
+    <text x="802" y="606" fill="#D8EBFF" font-size="14" font-weight="700" font-family="Arial, sans-serif">Cost Insights</text>
+    <g>
+      <rect x="804" y="622" width="16" height="36" rx="3" fill="#3BB3FF"/>
+      <rect x="826" y="629" width="16" height="29" rx="3" fill="#74D5FF"/>
+      <rect x="848" y="636" width="16" height="22" rx="3" fill="#9DE3FF"/>
+      <rect x="870" y="641" width="16" height="17" rx="3" fill="#D5F1FF"/>
+    </g>
+    <text x="914" y="635" fill="#EAF7FF" font-size="17" font-weight="700" font-family="Arial, sans-serif">135%</text>
+    <text x="914" y="654" fill="#7E9BB5" font-size="10" font-family="Arial, sans-serif">vs last month</text>
+  </g>
+
+  <g>
+    <circle cx="118" cy="744" r="22" fill="#A8E6FF" fill-opacity="0.15"/>
+    <circle cx="118" cy="744" r="11" fill="#D9F4FF" fill-opacity="0.24"/>
+    <path d="M117 714C105 714 95 724 95 736C95 760 117 775 117 775C117 775 139 760 139 736C139 724 129 714 117 714Z" fill="#B7F0FF" fill-opacity="0.2"/>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M0 744C83 736 112 733 177 742C256 752 320 761 391 750C463 738 559 719 643 740C702 755 765 754 820 742C878 729 938 725 1005 739C1082 755 1136 744 1200 714V900H0V744Z" fill="#071D37" fill-opacity="0.8"/>
+  </g>
+</svg>

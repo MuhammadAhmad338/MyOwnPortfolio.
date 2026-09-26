@@ -1,7 +1,7 @@
 import ProjectClient from './ProjectClient';
 
 const projectSlugs = [
-  "loomflow", "ipwise",
+  "loomflow", "ipwise", "azurecostdashboard",
   "daycount", "flutterlearn", "devkittools", "devkittoolsapp", "resumely", "resumelyapp", "removeflow",
   "fooddash", "taskflow", "anzatexintl", "ghostdetector",
   "soravpn", "seelvpn", "yallavpn", "tytanvpn", "totemvpn",
